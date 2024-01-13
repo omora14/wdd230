@@ -1,0 +1,150 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,600;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #ffffff;
+    color: #131313;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* Adjust padding as needed */
+}
+
+.profilepic {
+    width: 340px;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 20px;
+    /* Adjust margin as needed */
+}
+
+#flag {
+    width: 40px;
+    height: auto;
+    margin-bottom: -15px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    margin-top: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 10px;
+}
+
+header {
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    padding-top: px;
+    background-color: #2a3b4c;
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+nav {
+    margin-top: 0;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+nav a {
+    color: white;
+    margin: 5px;
+    font-family: var(--paragraph-font);
+    padding: 5px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    width: 530px;
+    max-width: 150%;
+    background-color: #2a3b4c;
+    margin: auto;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+}
+
+.card {
+    border-radius: 5px;
+    width: 700px;
+    max-width: 70%;
+    border: 1px solid #2a3b4c;
+    margin: 0 auto;
+}
+
+.card h3 {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: #2a3b4c;
+    padding: 15px;
+}
+
+.card p {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 55px;
+    text-align: center;
+    margin-bottom: -15px;
+}
+
+hr {
+    width: 70%;
+    margin: 20px auto;
+    margin-bottom: 15px;
+}
+
+.numbered-list {
+    list-style: none;
+    counter-reset: my-counter;
+}
+
+.numbered-list li {
+    counter-increment: my-counter;
+    margin-bottom: 10px;
+}
+
+.numbered-list li:before {
+    content: counter(my-counter, decimal-leading-zero) ": ";
+    color: #000;
+    margin-right: 5px;
+}
