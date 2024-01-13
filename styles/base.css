@@ -1,5 +1,4 @@
 /* Importing Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,600;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
 
@@ -54,7 +53,6 @@ header {
     max-width: 600px;
     margin: 0 auto;
     padding-bottom: 30px;
-    padding-top: px;
     background-color: #2a3b4c;
     font-family: var(--heading-font);
     text-align: center;
@@ -87,7 +85,6 @@ footer {
     max-width: 150%;
     background-color: #2a3b4c;
     margin: auto;
-    padding: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
