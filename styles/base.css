@@ -86,7 +86,8 @@ nav a {
 }
 
 footer {
-    width: 100%;
+    width: 580px;
+    max-width: 700px;
     background-color: #3e4b5b;
     margin-top: 20px;
     /* Increase margin-top for better spacing */
@@ -94,6 +95,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 25px auto;
 }
 
 footer p {
@@ -104,7 +106,7 @@ footer p {
 .card {
     border-radius: 10px;
     /* Rounded corners for cards */
-    width: 100%;
+    width: 620px;
     max-width: 700px;
     border: 1px solid #3e4b5b;
     /* Darker border color */
