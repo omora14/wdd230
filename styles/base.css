@@ -81,6 +81,7 @@ nav a {
     font-family: var(--paragraph-font);
     padding: 10px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 footer {
