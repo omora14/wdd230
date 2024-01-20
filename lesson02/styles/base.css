@@ -38,18 +38,18 @@ main {
     text-align: left;
 }
 
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
 /* H2 styles with background color */
 .card h2 {
     background-color: #3e4b5b;
     color: white;
     padding: 10px;
     margin: 0;
-}
-
-.card img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
 }
 
 /* Footer styles */
@@ -70,11 +70,6 @@ footer {
 @media (min-width: 768px) and (max-width: 1023px) {
     main {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    /* Third card spans two columns */
-    .card:nth-child(3) {
-        grid-column: span 2;
     }
 }
 
