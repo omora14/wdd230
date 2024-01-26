@@ -219,7 +219,7 @@ hr {
 }
 
 .active::before {
-    content: "📍";
+    content: "📌";
 }
 
 @media (min-width: 37.5em) {
