@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;1,300&display=swap');
+
+:root {
+    --heading-font: 'Rubik', sans-serif;
+    --paragraph-font: 'Raleway', sans-serif;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: auto;
+}
+
+main {
+    margin-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+header,
+nav,
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header {
+    color: #fff;
+    padding: 20px;
+    background-color: #1B4242;
+    font-family: var(--heading-font);
+}
+
+
+footer {
+    background-color: #1B4242;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px auto;
+}
+
+footer p {
+    color: #fff;
+    text-align: center;
+}
+
+.card {
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    border: 1px solid #99BC85;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    color: #000;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+    background-color: #99BC85;
+    padding: 15px;
+}
+
+.card p {
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 2px solid #babcc0;
+}
+
+hr {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.wireframe {
+    padding: 40px
+}
