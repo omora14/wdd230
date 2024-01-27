@@ -97,3 +97,43 @@ hr {
 .wireframe {
     padding: 40px
 }
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.colors th {
+    background-color: #fff;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.headers {
+    background-color: #1B4242;
+    color: #fff;
+}
+
+.bodies {
+    background-color: #99BC85;
+}
+
+.letter-one {
+    background-color: #000000;
+    color: #fff;
+}
+
+.letter-two {
+    background-color: #FFF;
+}
+
+p.colored {
+    background-color: #fff;
+    color: #fff;
+}
