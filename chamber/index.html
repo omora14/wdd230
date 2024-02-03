@@ -8,10 +8,14 @@
     <meta name="description"
         content="This is a Chamber of Commerce for the people of Perez Zeledon or those who are interested in this area in particular. This web is dessigned to help Perez growth in all the  means.">
     <meta name="author" content="Owen Morales">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preload" href="styles/normalize.css" type="text/css" as="style"
+        onload="this.onload=null;this.rel='stylesheet';" />
+    <link rel="preload" href="styles/base.css" type="text/css" as="style"
+        onload="this.onload=null;this.rel='stylesheet';" />
+    <link rel="preload" href="styles/medium.css" type="text/css" as="style"
+        onload="this.onload=null;this.rel='stylesheet';" />
+    <link rel="preload" href="styles/larger.css" type="text/css" as="style"
+        onload="this.onload=null;this.rel='stylesheet';" />
     <link rel="icon" href="images/chamberfavicon.ico">
 
     <meta property="og:title" content="Perez Chamber of Commerce" />
@@ -24,7 +28,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="Perez Logo" height="120">
+            <img src="images/logo-min.png" alt="Perez Logo" height="120">
         </div>
         <h1>Perez Chamber of Commerce</h1>
         <!-- <div class="navigation-icons">
@@ -32,7 +36,7 @@
             <img src="images/facebook.png" alt="Facebook Icon" height="50px">
         </div> -->
     </header>
-    <button id="menu"></button>
+    <button id="menu" aria-label="Hamburger Menu"></button>
     <nav class="navigation">
         <a href="#">Home</a>
         <a href="#">Discover</a>
@@ -40,7 +44,7 @@
         <a href="#">Join</a>
     </nav>
 
-    <img id="hero" src="images/hero-image.jpg" alt="Hero Image" />
+    <img id="hero" loading="lazy" src="images/hero-image-min1.jpg" alt="Hero Image" loading="lazy" async>
     <br>
     <main>
 
