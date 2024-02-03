@@ -1,9 +1,12 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Get the current year and update the first paragraph in the footer
-    var currentYear = new Date().getFullYear();
-    document.querySelector('footer p:first-child').innerHTML = '&copy; ' + currentYear + '<br>Owen Morales <br><br>Costa Rica <br> <img src="images/costarica.jpg" alt="Costa Rica flag" width="40" height="20">';
+document.addEventListener("DOMContentLoaded", () => {
+    const year = new Date().getFullYear();
 
-    // Get the last modified date and update the second paragraph in the footer
-    var lastModifiedDate = document.lastModified;
-    document.getElementById('lastModified').innerText = 'Last Modified: ' + lastModifiedDate;
+    const firstP = document.querySelector("footer p:first-of-type");
+    firstP.innerHTML = `&copy ${year} 
+    Owen Morales <br> 
+    Costa Rica <br> <img id="flag" src = "images/costarica.jpg" alt="Costarican Flag">`;
+
+    const lastModifiedDate = document.lastModified;
+    const secondP = document.getElementById("lastModified");
+    secondP.textContent = `Last Modified: ${lastModifiedDate}`;
 });
