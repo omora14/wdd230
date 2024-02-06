@@ -17,3 +17,34 @@
     }
 
 }
+
+@media screen and (min-width: 1201px) and (max-width: 4000px) {
+
+    header p {
+        margin-bottom: 60px;
+    }
+
+    header {
+        margin-bottom: 0px;
+    }
+
+    .three {
+        align-items: center;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    hr {
+
+        grid-column: span 2;
+    }
+
+    .three h2 {
+        grid-column: span 4;
+        justify-items: center;
+    }
+
+    .mini-card-1,
+    .mini-card-2 {
+        margin-left: 15px;
+    }
+}

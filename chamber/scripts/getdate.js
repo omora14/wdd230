@@ -1,17 +1,11 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var currentYear = new Date().getFullYear();
-    var footer = document.querySelector('footer');
+document.addEventListener("DOMContentLoaded", () => {
+    const year = new Date().getFullYear();
 
-    footer.querySelector('p:first-child').innerHTML = '&copy; ' + currentYear + '<br>Owen Morales' + '<br>WDD230 Web Frontend Development';
+    const firstP = document.querySelector("footer p:first-of-type");
+    firstP.innerHTML = `&copy ${year} 
+ Owen Morales <br>WDD230 Web Frontend Development <br><br>info@example.com <br>+1 324 343 3434`;
 
-    var fakeInfo = document.createElement('p');
-    fakeInfo.innerHTML = 'info@example.com' + '<br>+1 278 343 4324' + '<br>St Street, NY, 19201';
-    fakeInfo.style.float = 'left';
-    fakeInfo.style.clear = 'both';
-    footer.appendChild(fakeInfo);
-
-    var lastModifiedDate = document.lastModified;
-    var lastModifiedElement = document.createElement('p');
-    lastModifiedElement.innerText = 'Last Modified: ' + lastModifiedDate;
-    footer.appendChild(lastModifiedElement);
+    const lastModifiedDate = document.lastModified;
+    const secondP = document.getElementById("lastModified");
+    secondP.textContent = `Last Modified: ${lastModifiedDate}`;
 });

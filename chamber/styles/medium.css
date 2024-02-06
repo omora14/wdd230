@@ -1,4 +1,4 @@
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 600px) and (max-width: 1199px) {
 
     header,
     nav,
@@ -21,5 +21,44 @@
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         width: 100%;
         height: auto;
+    }
+
+    .custom-btn {
+        width: 150px;
+        height: 50px;
+        bottom: 300px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+    header p {
+        margin-bottom: 60px;
+    }
+
+    header {
+        margin-bottom: 0px;
+    }
+
+    .one,
+    .three {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    hr {
+        grid-column: span 2;
+    }
+
+    .three h2 {
+        grid-column: span 2;
+    }
+
+    .mini-card-1,
+    .mini-card-2 {
+        margin-left: 110px;
+    }
+
+    .two h2 {
+        margin-left: 210px;
     }
 }
