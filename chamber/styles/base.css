@@ -39,8 +39,8 @@ footer {
 }
 
 header {
-    color: #fff;
-    background-color: #1B4242;
+    color: #000;
+    background-color: #99BC85;
     font-family: var(--heading-font);
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@ h1 {
 }
 
 nav {
-    background-color: #1B4242;
+    background-color: #99BC85;
     padding: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -76,7 +76,8 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #000;
+    background-color: #99BC85;
     margin: 10px;
     font-family: var(--paragraph-font);
     padding: 10px;
@@ -85,7 +86,7 @@ nav a {
 }
 
 footer {
-    background-color: #1B4242;
+    background-color: #99BC85;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -94,14 +95,14 @@ footer {
 }
 
 footer p {
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 
 .card {
     width: 100%;
     border-radius: 10px;
-    border: 1px solid #99BC85;
+    border: 1px solid #1B4242;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
     box-sizing: border-box;
@@ -124,11 +125,11 @@ footer p {
 .card h2 {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    color: #000;
+    color: #fff;
     text-align: center;
     margin: 0;
     margin-bottom: 10px;
-    background-color: #99BC85;
+    background-color: #1B4242;
     padding: 15px;
 }
 
@@ -140,7 +141,7 @@ h2 {
     margin-top: 30px;
     text-align: center;
     margin-bottom: 0;
-    border-bottom: 2px solid #babcc0;
+    border-bottom: 2px solid #fff;
 }
 
 hr {
@@ -254,17 +255,23 @@ button {
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(101, 157, 153, 0.5),
-        7px 7px 20px 0px rgba(0, 0, 0, .1),
-        4px 4px 5px 0px rgba(0, 0, 0, .1);
-    outline: none;
     position: absolute;
-    bottom: 250px;
+    bottom: 400px;
     left: 50%;
     transform: translateX(-50%);
 }
+
+/*@media screen and (min-width: 500px) and (max-width: 650px) {
+    .custom-btn {
+        width: 70%;
+        height: 40px;
+        position: absolute;
+        bottom: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 4;
+    }
+}*/
 
 .btn-13 {
     background-color: #000;
