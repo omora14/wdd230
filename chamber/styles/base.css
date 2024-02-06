@@ -337,7 +337,8 @@ button {
         left: 45%;
         bottom: 550px;
         transform: translateX(-50%);
-
+        position: relative;
+        bottom: 120px;
     }
 
     .hero .custom-btn {
