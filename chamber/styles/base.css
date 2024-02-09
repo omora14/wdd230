@@ -156,7 +156,7 @@ h2 {
     margin-top: 30px;
     text-align: center;
     margin-bottom: 0;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #827a7a81;
 }
 
 hr {
@@ -166,12 +166,13 @@ hr {
 
 #menu {
     font-size: 1.5rem;
-    border: 0;
+    border: none;
     background: none;
     color: #000;
     position: absolute;
     top: 1rem;
     right: 1rem;
+    background-color: #fff;
 }
 
 #menu::before {
