@@ -29,6 +29,8 @@ main {
     display: grid;
     gap: 20px;
     z-index: 0;
+    background-color: #eee;
+    color: #000;
 }
 
 header,
@@ -170,9 +172,8 @@ hr {
     background: none;
     color: #000;
     position: absolute;
-    top: 1rem;
+    top: 3rem;
     right: 1rem;
-    background-color: #fff;
 }
 
 #menu::before {
@@ -397,4 +398,26 @@ button {
     padding-top: 15px;
     width: 50px;
     height: auto;
+}
+
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 11rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
+}
+
+@media (max-width: 767px) {
+    #mode {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }
