@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta name="description"
+        content="This is a task for the WDD230 Frontend Development to teach my responsive images skills.">
+    <meta name="author" content="Owen Morales">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Responsive Images" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image"
+        content="https://en.jumbocar-costarica.com/upload/stuff/images/jcr/costa-rica-landscape-natural-reserve-monteverde.webp" />
+    <meta property="og:url" content="https://omora14.github.io/wdd230/lesson06/responsive-images.html" />
+</head>
+
+<main>
+    <div class="hero">
+        <picture>
+            <source srcset="lesson06/images/hero-small.webp" media="(max-width: 500px)">
+            <source srcset="lesson06/images/hero-medium.webp" media="(max-width: 1000px)">
+            <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+        </picture>
+    </div>
+</main>
+
+</html>
