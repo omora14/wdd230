@@ -114,8 +114,6 @@ footer p {
 }
 
 .card-1 h2 {
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     color: #fff;
     text-align: center;
     margin: 0;
@@ -150,11 +148,6 @@ h2 {
     border-bottom: 2px solid #827a7a81;
 }
 
-hr {
-    width: 80%;
-    margin: 20px auto;
-}
-
 #menu {
     font-size: 1.5rem;
     border: none;
@@ -163,6 +156,7 @@ hr {
     position: absolute;
     top: 3rem;
     right: 1rem;
+    border: solid #000;
 }
 
 #menu::before {
@@ -345,10 +339,6 @@ button {
     gap: 15px;
 }
 
-.two {
-    display: grid;
-}
-
 .three {
     display: grid;
     gap: 10px;
@@ -379,7 +369,6 @@ button {
 
 .two {
     display: grid center;
-    padding: 0 auto;
 }
 
 .social img {
@@ -497,5 +486,48 @@ input:checked+.slider:before {
 @media screen and (min-width: 0px) and (max-width: 600px) {
     .switch {
         left: -170px;
+    }
+}
+
+.hero {
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, .1)
+}
+
+.hero img {
+    margin-top: -20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #395597);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: 1.5rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.75;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .herolabel p {
+        padding: 15px;
+        font-size: small;
+    }
+
+    .herolabel {
+        padding: 10px;
     }
 }
