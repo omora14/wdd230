@@ -90,7 +90,7 @@ footer p {
     text-align: center;
 }
 
-.card {
+.one {
     width: 100%;
     border-radius: 10px;
     border: 1px solid #1B4242;
@@ -99,7 +99,7 @@ footer p {
     box-sizing: border-box;
 }
 
-.card-container {
+.one {
     display: grid;
     height: auto;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -107,13 +107,13 @@ footer p {
     justify-content: center;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
     .card-container {
         grid-template-columns: 1fr;
     }
 }
 
-.card h2 {
+.card-1 h2 {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
     color: #fff;
@@ -139,7 +139,7 @@ footer p {
     text-align: center;
 }
 
-.card p {
+.card-1 p {
     text-align: center;
 }
 
@@ -229,7 +229,7 @@ hr {
     text-align: center;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
     .hero .custom-btn {
         position: relative;
         margin: 20px auto;
@@ -320,7 +320,7 @@ button {
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
     .custom-btn {
         width: 70%;
         height: 40px;
@@ -347,7 +347,6 @@ button {
 
 .two {
     display: grid;
-
 }
 
 .three {
@@ -394,9 +393,6 @@ button {
     color: #fff;
     border-color: #eee;
 }
-
-
-
 
 .switch {
     position: relative;
@@ -490,10 +486,16 @@ input:checked+.slider:before {
     border-color: #eee;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
     .getting-dark {
         position: absolute;
         top: 20px;
         right: -150px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    .switch {
+        left: -170px;
     }
 }

@@ -1,9 +1,8 @@
-@media (min-width: 600px) and (max-width: 1199px) {
+@media (min-width: 600px) and (max-width: 1200px) {
 
     header,
     nav,
-    footer,
-    .card {
+    footer {
         max-width: 100%;
     }
 
@@ -25,8 +24,6 @@
 
     .custom-btn {
         width: 150px;
-        height: 50px;
-        bottom: 300px;
     }
 }
 
@@ -41,6 +38,7 @@
 
     .one,
     .three {
+        justify-content: center;
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -51,15 +49,6 @@
 
     .three h2 {
         grid-column: span 2;
-    }
-
-    .mini-card-1,
-    .mini-card-2 {
-        margin-left: 110px;
-    }
-
-    .two h2 {
-        margin-left: 210px;
     }
 }
 

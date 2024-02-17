@@ -3,7 +3,7 @@
     header,
     nav,
     footer {
-        max-width: 1200px;
+        max-width: 100%;
     }
 
     main {
@@ -16,9 +16,12 @@
         bottom: 300px;
     }
 
+    .switch {
+        right: 20px;
+    }
 }
 
-@media screen and (min-width: 1201px) and (max-width: 4000px) {
+@media screen and (min-width: 1200px) and (max-width: 4000px) {
 
     header p {
         margin-bottom: 60px;
