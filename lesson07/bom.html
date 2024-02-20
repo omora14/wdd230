@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM: Favorite Chapter</title>
+    <meta name="description"
+        content="This is a web task for the course WDD230 Frontend Development. We will be working our DOM skills during this task.">
+    <meta name="author" content="Owen Morales">
+    <link rel="preload" href="styles/normalize.css" type="text/css" as="style"
+        onload="this.onload=null;this.rel='stylesheet';" />
+    <link rel="preload" href="styles/bom.css" type="text/css" as="style"
+        onload="this.onload=null;this.rel='stylesheet';" />
+    <link rel="icon" href="images/bomfavicon.ico">
+
+    <meta property="og:title" content="BOM: Favorite Chapter" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/e/e5/Mormon-book.jpg" />
+    <meta property="og:url" content="https://omora14.github.io/wdd230/lesson05/bom.html" />
+</head>
+
+<body>
+    <h1>📘 Book of Mormon - Top 15</h1>
+    <main>
+        <form id="chapterForm">
+            <div class="input">
+                <label>Enter Book and Chapter<br>
+                    <input type="text" id="chapterInput" placeholder="Alma 5" required>
+                </label>
+                <button type="submit" id="addButton">Add Chapter</button>
+            </div>
+        </form>
+        <div class="listcontainer">
+            <ul class="list" id="chapterList">
+            </ul>
+        </div>
+        <button id="sortButton">Sort Chapters</button>
+    </main>
+
+    <script src="scripts/bom.js"></script>
+</body>
+
+</html>
