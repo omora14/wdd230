@@ -5,7 +5,16 @@ const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
 modeButton.addEventListener("change", () => {
     const isDarkMode = darkModeToggle.checked;
-    body.classList.toggle('dark-mode', darkModeToggle.checked);
-    main.classList.toggle('dark-mode', darkModeToggle.checked);
-    localStorage.setItem("darkMode", darkModeToggle.checked);
+    body.classList.toggle('dark-mode', isDarkMode);
+    main.classList.toggle('dark-mode', isDarkMode);
+    toggleDarkModeForAside(isDarkMode); // Toggle dark mode for the aside elements
+    localStorage.setItem("darkMode", isDarkMode);
 });
+
+function toggleDarkModeForAside(isDarkMode) {
+    const asideElements = document.querySelectorAll("aside .aside");
+    asideElements.forEach(aside => {
+        aside.classList.toggle('dark-mode', isDarkMode);
+    });
+}
+

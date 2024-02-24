@@ -51,3 +51,35 @@
         margin-left: 15px;
     }
 }
+
+@media screen and (min-width: 1200px) and (max-width: 4000px) {
+    #main-discover {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    table {
+        margin-left: -200px;
+        width: 400px;
+    }
+
+    .aside {
+        max-width: 200%;
+        margin-right: 10px;
+    }
+
+    .gallery {
+        width: 50%;
+        margin-left: auto;
+    }
+
+    .gallery div {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery img:hover {
+        transform: scale(1.1);
+    }
+}
