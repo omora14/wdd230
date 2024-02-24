@@ -7,7 +7,7 @@ modeButton.addEventListener("change", () => {
     const isDarkMode = darkModeToggle.checked;
     body.classList.toggle('dark-mode', isDarkMode);
     main.classList.toggle('dark-mode', isDarkMode);
-    toggleDarkModeForAside(isDarkMode); // Toggle dark mode for the aside elements
+    toggleDarkModeForAside(isDarkMode);
     localStorage.setItem("darkMode", isDarkMode);
 });
 

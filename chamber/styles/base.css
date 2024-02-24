@@ -660,26 +660,3 @@ figcaption {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-
-.gallery div:hover figcaption {
-    opacity: 1;
-}
-
-.dark-mode-section {
-    background-color: #000;
-    color: #fff;
-}
-
-.dark-mode-section .aside {
-    border: 1px solid rgb(175, 170, 170);
-}
-
-.dark-mode-section table {
-    border-collapse: collapse;
-}
-
-.dark-mode-section table,
-.dark-mode-section table th,
-.dark-mode-section table td {
-    border: 1px solid rgb(175, 170, 170);
-}
