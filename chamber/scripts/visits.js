@@ -1,3 +1,38 @@
+const todayDisplay = document.querySelector(".today");
+const visitDisplay = document.querySelector(".visits");
+const elapsedDaysDisplay = document.querySelector(".elapsed-days");
+
+let numVisits = Number(window.localStorage.getItem("visits-ls"));
+
+let lastVisit = Number(window.localStorage.getItem("lastvisit-ls"));
+
+
+
+
+let today1 = Date.now();
+let elapsed = today1 - lastVisit;
+
+let days = Math.round((elapsed) / 86400000);
+
+
+
+
+if (numVisits != 0) {
+    visitDisplay.textContent = numVisits;
+    elapsedDaysDisplay.textContent = days;
+
+} else {
+    visitDisplay.textContent = "This is your first visit";
+}
+
+numVisits++;
+
+localStorage.setItem("visits-ls", numVisits);
+
+localStorage.setItem("lastvisit-ls", Date.now());
+
+todayDisplay.textContent = (Date.now());
+
 const currentDate = new Date();
 
 const lastVisitDate = localStorage.getItem('lastVisitDate');
@@ -20,10 +55,3 @@ if (!lastVisitDate) {
         document.getElementById('message').textContent = `You last visited ${daysDifference} ${message} ago.`;
     }
 }
-
-visitCount++;
-
-localStorage.setItem('lastVisitDate', currentDate.toString());
-localStorage.setItem('visitCount', visitCount.toString());
-
-document.querySelector('.visits').textContent = visitCount;

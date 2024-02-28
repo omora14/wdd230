@@ -1,7 +1,6 @@
-const mainnav = document.querySelector("#menu");
-const burger = document.querySelector(".navigation");
+function toggleMenu(x) {
+    document.getElementById("primary-nav").classList.toggle("open");
+    document.getElementById("container").classList.toggle("open");
 
-mainnav.addEventListener("click", () => {
-    burger.classList.toggle("open");
-    mainnav.classList.toggle("open");
-});
+    x.classList.toggle("change");
+}

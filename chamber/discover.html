@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perez Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap"
+        rel="stylesheet">
+
     <meta name="description"
         content="This is a Chamber of Commerce for the people of Perez Zeledon or those who are interested in this area in particular. This web is dessigned to help Perez growth in all the  means.">
     <meta name="author" content="Owen Morales">
@@ -16,7 +26,7 @@
         onload="this.onload=null;this.rel='stylesheet';" />
     <link rel="preload" href="styles/larger.css" type="text/css" as="style"
         onload="this.onload=null;this.rel='stylesheet';" />
-    <link rel="icon" href="images/chamberfavicon.ico">
+    <link rel="icon" href="images/faviconchamber1.ico">
 
     <meta property="og:title" content="Perez Chamber of Commerce" />
     <meta property="og:type" content="website" />
@@ -33,141 +43,172 @@
                 <span class="slider round"></span>
             </label>
         </div>
-        <div class="logo">
-            <img src="images/logo.webp" alt="Perez Logo" width="90" height="120">
-        </div>
-        <h1>Perez Chamber <br>of Commerce</h1>
-        <!-- <div class="navigation-icons">
-            <img src="images/linkedin.png" alt="LinkedIn Icon" height="50px">
-            <img src="images/facebook.png" alt="Facebook Icon" height="50px">
-        </div> -->
-    </header>
-    <button id="menu" aria-label="Hamburger Menu"></button>
-    <nav class="navigation">
-        <a href="index.html">Home</a>
-        <a href="discover.html">Discover</a>
-        <a href="#">Directory</a>
-        <a href="#">Join</a>
-    </nav>
+        <a href="index.html">
+            <img class="logo" src="images/logo1.webp" alt="Perez Chamber Logo">
+        </a>
 
-    <main id="main-discover">
-        <aside class="dark-mode-section">
-            <div class="aside">
-                <h2>Overview </h2>
-                <p>Perez Zeledon is a canton located in the San José province of Costa Rica. It is known for its
-                    stunning natural landscapes, including lush forests, pristine rivers, and majestic mountains. The
-                    canton covers an area of approximately 1,905 square kilometers and is home to diverse flora and
-                    fauna. Perez Zeledon is also characterized by its rich cultural heritage, with indigenous influences
-                    still prevalent in the region.</p>
+        <h1>Perez</h1>
+        <p>Chamber of Commerce</p>
+
+        <nav>
+            <div id="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
             </div>
-            <div class="aside">
-                <h2>Life</h2>
-                <p>Life in Perez Zeledon is characterized by a strong sense of community and connection to nature. The
-                    canton offers a high quality of life, with residents enjoying a peaceful and relaxed atmosphere. The
-                    region boasts a temperate climate, making it ideal for outdoor activities such as hiking,
-                    birdwatching, and exploring the area's natural wonders.</p>
-                <p>The people of Perez Zeledon are known for their warmth and hospitality, welcoming visitors with open
-                    arms. The canton is home to vibrant communities, each with its own unique traditions and customs.
-                    Residents often gather for festivals, cultural events, and celebrations, strengthening the bond
-                    between neighbors and fostering a sense of belonging.</p>
+            <ul id="primary-nav">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <img src="images/facebook.png" alt="fb icon">
+                        </span>Facebook</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <img src="images/linkedin.png" alt="linkedin icon">
+                        </span>LinkedIn</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main id="discover-main">
+        <h2 class="sub-heading">Discover Perez</h2>
+        <section id="around-town">
+
+            <h2>Things to see and do in Perez:</h2>
+
+            <picture class="discover-img">
+                <img src="images/ballena.webp" data-src="images/ballena.webp" alt="Marino Ballena">
+            </picture>
+            <h3>Marino Ballena:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste itaque debitis quasi amet ab?
+            </p>
+
+            <picture class="discover-img">
+                <img src="images/nauyaca.webp" data-src="images/nauyaca.webp" loading="lazy" alt="Nauyaca Waterfall">
+            </picture>
+            <h3>Nauyaca Waterfall:</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis dolore et, temporibus dolor ea
+                officiis!
+            </p>
+
+            <picture class="discover-img">
+                <img src="images/fudebiol.webp" data-src="images/fudebiol.webp" loading="lazy" alt="Fudebiol Park">
+            </picture>
+            <h3>Fudebil Park:</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequuntur eum eos magni itaque
+                labore.
+            </p>
+
+            <picture class="discover-img">
+                <img src="images/agricultor.webp" data-src="images/agricultor.webp" loading="lazy"
+                    alt="Feria del Agricultor">
+            </picture>
+            <h3>Feria del Agricultor:</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, est repellat natus dolor
+                reprehenderit minus!
+            </p>
+
+            <picture class="discover-img">
+                <img src="images/ecochontales1.webp" data-src="images/ecochontales1.webp" loading="lazy"
+                    alt="EcoChontales Waterfall">
+            </picture>
+            <h3>EcoChontales Waterfall:</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, in quae hic sequi laboriosam
+                dignissimos!
+            </p>
+
+            <picture class="discover-img">
+                <img src="images/stadium.webp" data-src="images/stadium.webp" loading="lazy" alt="Perez stadium">
+            </picture>
+            <h3>Stadium of Perez:</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate obcaecati quos cupiditate quo ipsum.
+            </p>
+        </section>
+
+        <section class="discover-container">
+            <div>
+                <h2>Demographic Data:</h2>
+                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores, culpa eveniet
+                    debitis fugit labore?.</h3>
+                <p class="emoji">🏘</p>
+
+                <h3 class="label">Elevation: <span>423'</span></h3>
+                <h3 class="label">Area: <span>7.234 sq/mi</span></h3>
+                <h3 class="label">Population: <span>12,242 (2023)</span></h3>
+
             </div>
-            <div class="aside">
-                <h2>Economy</h2>
-                <p>Agriculture: The region is known for its production of coffee, sugarcane, and tropical fruits.
-                    Agriculture provides employment opportunities and contributes significantly to the local economy.
-                </p>
-                <p>Tourism: Perez Zeledon attracts visitors with its natural beauty and cultural heritage.
-                    Tourism-related businesses, such as hotels, restaurants, and tour operators, play a vital role in
-                    supporting the economy and creating jobs.</p>
-                <p>Commerce: The canton has a thriving commercial sector, with markets, shops, and businesses serving
-                    the needs of residents and tourists. From small family-owned stores to large retail chains, commerce
-                    contributes to the region's vibrant economy.</p>
-            </div>
-            <table id="statistics-table">
-                <thead>
-                    <tr>
-                        <th>Perez Statistics</th>
-                        <th> </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Population</td>
-                        <td>142,550</td>
-                    </tr>
-                    <tr>
-                        <td>International Sales</td>
-                        <td>$2.1B</td>
-                    </tr>
-                    <tr>
-                        <td>International Purchases</td>
-                        <td>$2.2B</td>
-                    </tr>
-                    <tr>
-                        <td>FDI</td>
-                        <td>$1.2M</td>
-                    </tr>
-                </tbody>
-            </table>
-        </aside>
-        <gallery class="gallery">
-            <div id="gallery-header">
+        </section>
+
+        <section class="discover-container">
+            <div>
+                <h2>Welcome</h2>
+
                 <span>
                     <p id="message"></p>
                 </span>
-                <h2><span class="label">Number of Visits: </span><span class="visits"></span></h2>
-                <h1>Perez Zeledon Gallery</h1>
-            </div>
-            <div>
-                <img class="discover-img" src="images/ecochontales1.webp" loading="lazy" alt="EcoChontales Waterfall">
-                <br>
-                <figcaption id="fig11">EcoChontales Waterfall</figcaption>
-            </div>
 
-            <div>
-                <img class="discover-img" src="images/nauyaca.webp" loading="lazy" alt="Nauyaca Waterfall">
-                <br>
-                <figcaption id="fig12">Nauyaca Waterfall</figcaption>
+                <h3><span class="label">Number of visits: </span> <span class="visits"></span></h3>
+
+                <h3><span class="label">Days since your last visit: </span><span class="elapsed-days"></span></h3>
+
+                <h3><span class="label">Timestamp upon load:</span> <span class="today"></span> (in milliseconds)</h3>
             </div>
-            <div>
-                <img class="discover-img" src="images/agricultor.webp" loading="lazy" alt="Feria del Agricultor">
-                <br>
-                <figcaption id="fig13">Feria del Agricultor</figcaption>
-            </div>
-            <div>
-                <img class="discover-img" src="images/ballena.webp" loading="lazy" alt="Marino Ballena">
-                <br>
-                <figcaption id="fig14">Marino Ballena</figcaption>
-            </div>
-            <div>
-                <img class="discover-img" src="images/fudebiol.webp" width="1000" loading="lazy" alt="Fudebiol">
-                <br>
-                <figcaption id="fig15">Fudebiol</figcaption>
-            </div>
-            <div>
-                <img class="discover-img" src="images/stadium.webp" loading="lazy" alt="Perez Stadium">
-                <br>
-                <figcaption id="fig16">Perez Stadium</figcaption>
-            </div>
-        </gallery>
+        </section>
+
+
     </main>
+
     <footer>
-        <p></p>
-        <div class="social">
-            <a href="#" target="_blank">
-                <img src="images/facebook.png" alt="facebook">
-            </a>
-            <a href="#" target="_blank">
-                <img src="images/linkedin.png" alt="linkedin">
-            </a>
+        <img class="logo" src="images/logo1.webp" alt="Perez Chamber logo">
+
+
+        <h3>Perez Chamber of Commerce</h3>
+        <div id="cont-info">
+            <p class="address">
+                <a href="https://maps.app.goo.gl/11LkSxaY4nL7VLvS8" target="_blank">
+                    <span>♦️</span>
+                </a>
+                Perez, San Jose, CR 11901
+            </p>
+            <p class="phone"><span>📞</span> 123.2324.2324</p>
+            <p class="email"><span>📧</span> info@perezchamber.org</p>
         </div>
+
+        <hr>
+        <p id="copyright"></p>
+        <p>WDD230 Project</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getdate.js"></script>
-    <script src="scripts/darkmode.js"></script>
+
+    <script>
+        const copyrightYear = document.querySelector("#copyright");
+        copyrightYear.textContent = `© ${new Date().getFullYear()} | Owen Morales | Costa Rica`;
+    </script>
+
+    <script src="scripts/scripts.js"></script>
     <script src="scripts/burger-menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/getdate.js"></script>
     <script src="scripts/visits.js"></script>
+
 </body>
 
 </html>

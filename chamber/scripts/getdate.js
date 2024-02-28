@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const year = new Date().getFullYear();
+    ;
 
-    const firstP = document.querySelector("footer p:first-of-type");
-    firstP.innerHTML = `&copy ${year} 
- Owen Morales <br>WDD230 Web Frontend Development <br><br>info@example.com <br>+1 324 343 3434`;
+    const copyrightYear = document.querySelector("#copyright");
+    copyrightYear.textContent = `© ${new Date().getFullYear()} | Owen Morales | Costa Rica`;
 
     const lastModifiedDate = document.lastModified;
     const secondP = document.getElementById("lastModified");

@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perez Chamber of Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;800;900&family=Rancho&family=Sacramento&display=swap"
+        rel="stylesheet">
+
     <meta name="description"
         content="This is a Chamber of Commerce for the people of Perez Zeledon or those who are interested in this area in particular. This web is dessigned to help Perez growth in all the  means.">
     <meta name="author" content="Owen Morales">
@@ -16,7 +26,7 @@
         onload="this.onload=null;this.rel='stylesheet';" />
     <link rel="preload" href="styles/larger.css" type="text/css" as="style"
         onload="this.onload=null;this.rel='stylesheet';" />
-    <link rel="icon" href="images/chamberfavicon.ico">
+    <link rel="icon" href="images/faviconchamber1.ico">
 
     <meta property="og:title" content="Perez Chamber of Commerce" />
     <meta property="og:type" content="website" />
@@ -33,106 +43,152 @@
                 <span class="slider round"></span>
             </label>
         </div>
-        <div class="logo">
-            <img src="images/logo.webp" alt="Perez Logo" width="90" height="120">
+
+        <a href="index.html">
+            <img class="logo" src="images/logo1.webp" alt="Perez Chamber Logo">
+        </a>
+
+        <h1>Perez</h1>
+        <p>Chamber of Commerce</p>
+
+        <nav>
+            <div id="container" onclick="toggleMenu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <ul id="primary-nav">
+                <li>
+                    <a href="index.html" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="discover.html">Discover</a>
+                </li>
+                <li>
+                    <a href="directory.html">Directory</a>
+                </li>
+                <li>
+                    <a href="join.html">Join</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <img src="images/facebook.png" alt="fb icon">
+                        </span>Facebook</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <img src="images/linkedin.png" alt="linkedin icon">
+                        </span>LinkedIn</a>
+                </li>
+            </ul>
+        </nav>
         </div>
-        <h1>Perez Chamber <br>of Commerce</h1>
-        <!-- <div class="navigation-icons">
-            <img src="images/linkedin.png" alt="LinkedIn Icon" height="50px">
-            <img src="images/facebook.png" alt="Facebook Icon" height="50px">
-        </div> -->
     </header>
-    <button id="menu" aria-label="Hamburger Menu"></button>
-    <nav class="navigation">
-        <a href="#">Home</a>
-        <a href="discover.html">Discover</a>
-        <a href="#">Directory</a>
-        <a href="#">Join</a>
-    </nav>
 
-    <div class="hero">
-        <picture>
-            <source srcset="images/hero-small.webp" media="(max-width: 500px)">
-            <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
-            <img src="images/hero-large.webp" alt="table setting" width="1500" height="750">
+    <main class="main1">
+        <picture id="hero">
+            <source media="(max-width: 700px)" srcset="images/hero-small.webp">
+            <source media="(max-width: 1108px)" srcset="images/hero-medium.webp">
+            <img src="images/hero-large.webp" alt="large sample image">
+
         </picture>
-    </div>
 
-    <main>
+        <section id="event">
+            <h2>Tresure Hunt</h2>
+            <p class="emoji">🏡</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt optio cumque, dolores dolor
+                consectetur, magnam dolorum velit nemo odio earum alias, minima maiores? Facere labore, vel dolor autem
+                adipisci molestias.</p>
+        </section>
 
-        <button class="custom-btn btn-13">Join Chamber</button>
+        <section id="weather">
 
-        <div class="card card-container">
-            <div class="one">
-                <hr>
-                <section class="card-1">
-                    <h2>Current Events</h2>
-                    <p>Event 1</p>
-                    <p>Event 2</p>
-                    <p>Event 3</p>
-                    <p>Event 4</p>
-                </section>
-                <section class="card-1">
-                    <h2>Weather</h2>
-                    <p>Temperature: <input type="number" id="temperatureInput" value="60">°F</p>
-                    <p>Wind Speed: <input type="number" id="windSpeedInput" value="5"> mph</p>
-                    <p>Wind Chill: <span id="wind-chill">N/A</span>°F</p>
-                    <button class="wind-chill" onclick="calculateWindChill()">Calculate Wind Chill</button>
-                </section>
+            <h2>Weather*</h2>
+            <p class="emoji">⛅</p>
+
+            <p>Temperature: <input type="number" id="temperatureInput" value="60"></p>
+            <p>Wind Speed: <input type="number" id="windSpeedInput" value="5"></p>
+            <p>Wind Chill: <span id="wind-chill">N/A</span>°F</p>
+            <button class="wind-chill" onclick="calculateWindChill()">Calculate Wind Chill</button>
+        </section>
+
+        <section id="news">
+            <h2>News Release</h2>
+            <p class="emoji">📰</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit animi fugit odio perferendis provident
+                commodi laudantium nemo nihil iure reprehenderit..</p>
+        </section>
+
+        <div class="spotlight">
+            <div class="spotlight-card">
+                <h2>Member Spotlight 1</h2>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ad illum soluta quam error laudantium
+                    tempore atque quaerat modi obcaecati.</p>
+            </div>
+            <div class="spotlight-card">
+                <h2>Member Spotlight 2</h2>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, aliquam iusto soluta deleniti autem
+                    eius vero voluptate earum ab repellat.</p>
+            </div>
+            <div class="spotlight-card">
+                <h2>Member Spotlight 3</h2>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo at rem recusandae quis ad, quaerat
+                    exercitationem rerum? Earum, neque nemo?</p>
             </div>
         </div>
-        <br>
-        <div class="two">
-            <section class="card-2 three">
-                <h2>Member Spotlights</h2>
-                <section class="mini-card-1">
-                    <h3>One</h3>
-                    <p>Company 1: Providing quality services since 2005.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
-                </section>
-                <section class="mini-card-2">
-                    <h3>Two</h3>
-                    <p>Company 2: Providing quality services since 2008.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
-                </section>
-                <section class="mini-card-1">
-                    <h3>Three</h3>
-                    <p>Company 3: Providing quality services since 2015.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
-                </section>
-                <section class="mini-card-2">
-                    <h3>Four</h3>
-                    <p>Company 4: Providing quality services since 2001.</p>
-                    <p>info@example.com</p>
-                    <p>+1 123 456 7890</p>
-                    <p>Website</p>
-                </section>
-            </section>
-        </div>
-        </div>
+
+        <section id="join">
+            <h2>Join</h2>
+            <a href="join.html">
+                <div id="join-btn">Join!</div>
+            </a>
+            <p class="emoji">🤝</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia facere laboriosam sint incidunt saepe,
+                architecto sequi, doloribus in similique aspernatur eaque quas error dicta possimus, odio nemo! Quae,
+                error molestias quod eos voluptatem aspernatur unde placeat quo perferendis a voluptate!. </p>
+        </section>
+
     </main>
+
     <footer>
-        <p></p>
-        <div class="social">
-            <a href="#" target="_blank">
-                <img src="images/facebook.png" alt="facebook">
-            </a>
-            <a href="#" target="_blank">
-                <img src="images/linkedin.png" alt="linkedin">
-            </a>
+        <img class="logo" src="images/logo1.webp" alt="Perez Chamber logo">
+
+
+        <h3>Perez Chamber of Commerce</h3>
+        <div id="cont-info">
+            <p class="address">
+                <a href="https://maps.app.goo.gl/11LkSxaY4nL7VLvS8" target="_blank">
+                    <span>♦️</span>
+                </a>
+                Perez, San Jose, CR 11901
+            </p>
+            <p class="phone"><span>📞</span> 123.2324.2324</p>
+            <p class="email"><span>📧</span> info@perezchamber.org</p>
         </div>
+
+        <hr>
+        <p id="copyright"></p>
+        <p>WDD230 Project</p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getdate.js"></script>
-    <script src="scripts/darkmode.js"></script>
+
+    <script>
+        const copyrightYear = document.querySelector("#copyright");
+        copyrightYear.textContent = `© ${new Date().getFullYear()} | Owen Morales | Costa Rica`;
+    </script>
+
+    <script src="scripts/scripts.js"></script>
     <script src="scripts/burger-menu.js"></script>
+    <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/spotlight.js"></script>
+    <script src="scripts/getdate.js"></script>
+
 </body>
 
 </html>
