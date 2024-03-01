@@ -52,6 +52,10 @@ main {
     gap: 20px;
 }
 
+.confirmation {
+    text-align: center;
+}
+
 header,
 nav,
 footer {
