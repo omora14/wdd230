@@ -80,92 +80,97 @@
         </div>
     </header>
 
-    <main id="discover-main">
-        <h2 class="sub-heading">Discover Perez</h2>
-        <section id="around-town">
+    <main id="join-main">
+        <h2 class="sub-heading">Join</h2>
+        <h2 class="page-title"> Perez Chamber of Commerce</h2>
+        <div id="table">
+            <table>
+                <caption>(NP = Non-profit Organization)</caption>
+                <thead>
+                    <tr>
+                        <th colspan="5">Perez Chamber Membership Levels</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th colspan="1">Training</th>
+                        <th colspan="1">Advertising</th>
+                        <th colspan="1">Event Discounts</th>
+                        <th colspan="1">Monthly Dues</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gold</td>
+                        <td>included</td>
+                        <td>Premium Logo Placement</td>
+                        <td>included</td>
+                        <td>$100</td>
+                    </tr>
+                    <tr>
+                        <td>Silver</td>
+                        <td>included</td>
+                        <td>Banner Ad</td>
+                        <td>50%</td>
+                        <td>$75</td>
+                    </tr>
+                    <tr>
+                        <td>Bronz</td>
+                        <td>fees vary</td>
+                        <td>e-newsletter</td>
+                        <td>10%</td>
+                        <td>$50</td>
+                    </tr>
+                    <tr>
+                        <td>NP</td>
+                        <td>fees vary</td>
+                        <td>e-newsletter</td>
+                        <td>included</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
 
-            <h2>Things to see and do in Perez:</h2>
+            </table>
+        </div>
 
-            <picture class="discover-img">
-                <img src="images/ballena.webp" data-src="images/ballena.webp" alt="Marino Ballena">
-            </picture>
-            <h3>Marino Ballena:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iste itaque debitis quasi amet ab?
-            </p>
+        <div>
+            <form method="get" action="thankyou.html">
 
-            <picture class="discover-img">
-                <img src="images/nauyaca.webp" data-src="images/nauyaca.webp" loading="lazy" alt="Nauyaca Waterfall">
-            </picture>
-            <h3>Nauyaca Waterfall:</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis dolore et, temporibus dolor ea
-                officiis!
-            </p>
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Cell Phone* <input type="tel" name="phone" placeholder="1235551234"
+                            required></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com"
+                            required></label>
+                </fieldset>
 
-            <picture class="discover-img">
-                <img src="images/fudebiol.webp" data-src="images/fudebiol.webp" loading="lazy" alt="Fudebiol Park">
-            </picture>
-            <h3>Fudebil Park:</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequuntur eum eos magni itaque
-                labore.
-            </p>
+                <fieldset>
+                    <legend>My Business Information</legend>
+                    <label class="top">Business Name* <input type="text" name="business" required></label>
+                    <label class="top">My Position in the Business <input type="text" name="title"
+                            pattern="[A-Za-z- ]{7,}" placeholder="Marketing Manager"></label>
+                    <label class="top">Website<input type="url" name="url" placeholder="http//"></label>
+                    <label class="top">Business Description
+                        <textarea name="businessDescription" id="bus-description" rows="4"
+                            placeholder="Enter business description here. . ."></textarea></label>
+                </fieldset>
 
-            <picture class="discover-img">
-                <img src="images/agricultor.webp" data-src="images/agricultor.webp" loading="lazy"
-                    alt="Feria del Agricultor">
-            </picture>
-            <h3>Feria del Agricultor:</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, est repellat natus dolor
-                reprehenderit minus!
-            </p>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                    <label class="sbs"><input type="radio" name="memberLevel" value="gold"> Gold </label>
+                    <label class="sbs"><input type="radio" name="memberLevel" value="silver"> Silver </label>
+                    <label class="sbs"><input type="radio" name="memberLevel" value="bronz"> Bronz </label>
+                    <label class="sbs"><input type="radio" name="memberLevel" value="np"> NP (Non-profit) </label>
+                </fieldset>
 
-            <picture class="discover-img">
-                <img src="images/ecochontales1.webp" data-src="images/ecochontales1.webp" loading="lazy"
-                    alt="EcoChontales Waterfall">
-            </picture>
-            <h3>EcoChontales Waterfall:</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus, in quae hic sequi laboriosam
-                dignissimos!
-            </p>
+                <input type="hidden" id="time-now" name="time-now" value="">
 
-            <picture class="discover-img">
-                <img src="images/stadium.webp" data-src="images/stadium.webp" loading="lazy" alt="Perez stadium">
-            </picture>
-            <h3>Stadium of Perez:</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate obcaecati quos cupiditate quo ipsum.
-            </p>
-        </section>
-
-        <section class="discover-container">
-            <div>
-                <h2>Demographic Data:</h2>
-                <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur asperiores, culpa eveniet
-                    debitis fugit labore?.</h3>
-                <p class="emoji">🏘</p>
-
-                <h3 class="label">Elevation: <span>423'</span></h3>
-                <h3 class="label">Area: <span>7.234 sq/mi</span></h3>
-                <h3 class="label">Population: <span>12,242 (2023)</span></h3>
-
-            </div>
-        </section>
-
-        <section class="discover-container">
-            <div>
-                <h2>Welcome</h2>
-
-                <span>
-                    <p id="message"></p>
-                </span>
-
-                <h3><span class="label">Number of visits: </span> <span class="visits"></span></h3>
-
-                <h3><span class="label">Days since your last visit: </span><span class="elapsed-days"></span></h3>
-
-                <h3><span class="label">Timestamp upon load:</span> <span class="today"></span> (in milliseconds)</h3>
-            </div>
-        </section>
-
-
+                <div>
+                    <input type="submit" value="Join My Chamber" class="submitBtn">
+                </div>
+            </form>
+        </div>
     </main>
 
     <footer>
@@ -201,7 +206,7 @@
     <script src="scripts/windchill.js"></script>
     <script src="scripts/spotlight.js"></script>
     <script src="scripts/getdate.js"></script>
-    <script src="scripts/visits.js"></script>
+    <script src="scripts/join.js"></script>
 
 </body>
 
