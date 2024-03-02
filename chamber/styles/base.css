@@ -69,12 +69,6 @@ h1 {
     padding-top: .5vh;
 }
 
-@media only screen and (max-width: 400px) {
-    header p {
-        display: none;
-    }
-}
-
 header p {
     grid-column: 2/4;
     grid-row: 3;
@@ -233,13 +227,18 @@ hr {
     background: var(--color-accent4);
 }
 
+.getting-dark {
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+}
+
 .switch {
     position: relative;
     display: inline-block;
-    right: -410px;
-    bottom: -10px;
+    top: -5px;
     width: 60px;
-    height: 34px;
+    height: 30px;
 }
 
 .switch input {
@@ -264,10 +263,10 @@ hr {
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
+    height: 23px;
+    width: 23px;
+    left: 5.5px;
+    bottom: 3.5px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
