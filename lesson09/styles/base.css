@@ -45,7 +45,7 @@ header {
     border-radius: 5px;
     margin: 2rem;
     padding: 1rem;
-    background-color: var(--color-cards-background);
+    background-color: #394157;
     box-shadow: #888888 0 0 30px 10px;
 }
 
