@@ -37,38 +37,51 @@
     </nav>
     <br>
     <h2 class="confirmation">Sign In</h2>
-    <div class="wf2">
-        <form method="get" action="record.html" class="wf1">
-            <fieldset>
-                <legend>Account Information</legend>
-                <label for="username">Username*</label>
-                <input type="text" id="username" name="username" required>
+    <br>
+    <form method="get" action="record.html" class="wf1" onsubmit="return validateForm()">
+        <fieldset>
+            <label>Username*<input type="text" id="username" name="username" required></label>
 
-                <label for="password">Password*</label>
-                <input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}"
-                    title="Password must be at least 8 characters long and alphanumeric">
+            <label>Password*
+                <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" required>
+            </label>
+            <label>Confirm Password*
+                <input type="password" id="password2" name="password2" required>
+            </label>
+            <p id="formmessage" style="visibility: hidden; color: red;"></p>
 
-                <label for="confirmPassword">Confirm Password*</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <label for="email">Email:
+                <input type="email" id="email" name="email" placeholder="example@byui.edu"
+                    title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required>
+            </label>
 
-                <label for="email">Email:
-                    <input type="email" id="email" name="email" placeholder="example@byui.edu"
-                        title="A valid byui.edu email address." pattern="[a-zA-Z0-9_.\-]+@byui.edu" required></label>
+            <label>Amount<br>
+                <span id="rangevalue">0</span>
+                <input type="range" id="rating" name="rating" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+            </label>
+        </fieldset>
 
+        <input type="submit" value="Rate Form">
+    </form>
 
-                <label for="pageRating">Page Rating</label>
-                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1">
-                <output for="pageRating">5</output>
-            </fieldset>
-
-            <input type="submit" value="Log In">
-        </form>
-
-    </div>
     <footer>
         <p></p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/form.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/burger-menu.js"></script>
     <script src="scripts/visit-count.js"></script>
