@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Pacalow Market",
+            "address": "Barrio Valverde, Calle Miguel Garcia",
+            "phone": "8555 0791",
+            "website": "https://pacalow.com",
+            "icon": "images/pacalow.webp",
+            "level": 1
+        },
+        {
+            "name": "Rock n' Roll",
+            "address": "Ct Street, Complejo Cultural",
+            "phone": "2353 2435",
+            "website": "https://rocknroll.com/",
+            "icon": "images/rocknroll.webp",
+            "level": 1
+        },
+        {
+            "name": "Sendero de los Gigantes",
+            "address": "San Jose, Rivas 122434",
+            "phone": "9238 2392",
+            "website": "https://senderodelosgigantes.com/",
+            "icon": "images/senderogigantes.webp",
+            "level": 1
+        },
+        {
+            "name": "Lucky's Casino",
+            "address": "St Street, Perez Zeledon 11901",
+            "phone": "2770 6230",
+            "website": "https://casinosfiestacostarica.com/",
+            "icon": "images/casino.webp",
+            "level": 1
+        },
+        {
+            "name": "Hotelera del Sur",
+            "address": "Dominical, Puntarenas, Costa Rica",
+            "phone": "8749 7337",
+            "website": "https://hoteldelsur.net/es/",
+            "icon": "images/hotelsur.webp",
+            "level": 4
+        },
+        {
+            "name": "Hacienda Altagracia",
+            "address": "San Geromino, Tinamaste 11908",
+            "phone": "855-812-2212",
+            "website": "https://aubergeresorts.com/altagracia/",
+            "icon": "images/hacienda.webp",
+            "level": 2
+        },
+        {
+            "name": "Fruta Internacional S.A",
+            "address": "Hoyon, Perez Zeledon 12424",
+            "phone": "2239 9696",
+            "website": "https://www.frutainternacional.com/",
+            "icon": "images/frutainter.webp",
+            "level": 3
+        }
+    ]
+}
