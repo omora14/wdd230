@@ -4,33 +4,33 @@ const linksURL = "https://omora14.github.io/wdd230/data/links.json";
 async function getLinks() {
     const response = await fetch(linksURL);
     const data = await response.json();
-    console.log(data);
-    displayLinks(data);
+    displayLinks(data.lessons);
 }
+getLinks();
 
+function displayLinks(lessons) {
+    const linksList = document.querySelector('.numbered-list');
 
-function displayLinks(weeks) {
-    const activitiesList = document.querySelector('.numbered-list');
-    activitiesList.innerHTML = '';
+    lessons.forEach((lesson, index) => {
+        const links = lesson.links;
 
-    weeks.forEach(week => {
-        const { lesson, links } = week;
-        const weekListItem = document.createElement('li');
-        weekListItem.innerHTML = `<strong>Lesson ${lesson}:</strong>`;
+        const lessonListNum = document.createElement('li');
+        const linksSpan = document.createElement('span');
 
-        const linksList = document.createElement('ul');
-        links.forEach(link => {
-            const linkListItem = document.createElement('li');
-            const anchor = document.createElement('a');
-            anchor.href = link.url.startsWith('http') ? link.url : baseURL + link.url;
-            anchor.textContent = link.title;
-            linkListItem.appendChild(anchor);
-            linksList.appendChild(linkListItem);
+        links.forEach((link, index) => {
+            const linkA = document.createElement('a');
+            linkA.href = link.url;
+            linkA.textContent = link.title;
+
+            linksSpan.appendChild(linkA);
+
+            if (index < links.length - 1) {
+                const separator = document.createTextNode(' | ');
+                linksSpan.appendChild(separator);
+            }
         });
 
-        weekListItem.appendChild(linksList);
-        activitiesList.appendChild(weekListItem);
+        lessonListNum.appendChild(linksSpan);
+        linksList.appendChild(lessonListNum);
     });
 }
-
-getLinks();
