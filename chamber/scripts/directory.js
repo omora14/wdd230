@@ -1,4 +1,4 @@
-const url = 'data/members.json';
+const url = 'https://omora14.github.io/wdd230/chamber/data/members.json';
 
 async function getMemberData(url) {
     const response = await fetch(url);
