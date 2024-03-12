@@ -38,13 +38,13 @@ const displayMembers = (members, service) => {
         let address = document.createElement('p');
         let phone = document.createElement('p');
         let website = document.createElement('a');
-
-
+        let membership = document.createElement('p');
 
         h2.textContent = `${member.name}`;
         address.textContent = `${member.address}`;
         phone.textContent = `${member.phone}`;
         website.textContent = `${member.website}`;
+        membership.textContent = `Membership: ${member.membership}`;
 
         icon.setAttribute('src', member.icon);
         icon.setAttribute('alt', 'business icon');
@@ -61,6 +61,7 @@ const displayMembers = (members, service) => {
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
+        card.appendChild(membership);
 
         cards.appendChild(card);
     })

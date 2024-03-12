@@ -723,6 +723,10 @@ tr:nth-child(odd) {
     padding: 0px;
 }
 
+.icon {
+    max-width: 30%;
+}
+
 .list .name .icon {
     display: none;
 }
