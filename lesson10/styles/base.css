@@ -1,0 +1,85 @@
+:root {
+    --color-primary: #EFEFEF;
+    --color-accent1: #d3cdb2;
+    --color-accent2: #3a508e;
+
+    --font-heading: Raleway, Verdana, sans-serif;
+    --font-subheading: Raleway, Verdana, sans-serif;
+    --font-subheading2: Raleway, Verdana, sans-serif;
+    --font-paragraph: Raleway, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-primary);
+    margin: 6rem;
+    text-align: center;
+    font-family: var(--font-paragraph);
+}
+
+header,
+footer {
+    background-color: #3e4b5b;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+}
+
+footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header h1 {
+    color: white;
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-weight: 300;
+    transition: font-size 2s;
+    font-size: 3.5vw;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: var(--font-subheading2);
+    font-weight: 300;
+    font-size: 12px;
+    padding-top: 2rem;
+}
+
+p {
+    font-size: 2vw;
+    padding: 5px;
+    transition: font-size 2s;
+}
+
+footer p {
+    font-size: 1.5vh;
+    color: white;
+}
+
+a:hover {
+    color: white;
+    background-color: var(--color-accent2);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-accent2);
+    margin: 2rem;
+    padding: .5rem 1rem;
+    background-color: var(--color-primary);
+    border-radius: 30px;
+
+}
+
+main {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
