@@ -81,6 +81,11 @@ nav {
     justify-content: center;
 }
 
+.visit-count {
+    font-style: italic;
+    left: 1.5rem;
+}
+
 nav a {
     color: #fff;
     margin: 10px;
@@ -297,4 +302,12 @@ hr {
     .herolabel {
         padding: 10px;
     }
+}
+
+#weather-icon {
+    width: 100%;
+}
+
+figcaption {
+    text-align: center;
 }
