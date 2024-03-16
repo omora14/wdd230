@@ -236,7 +236,7 @@ hr {
 .switch {
     position: relative;
     display: inline-block;
-    top: -5px;
+    top: 1px;
     width: 60px;
     height: 30px;
 }
@@ -353,6 +353,7 @@ section div {
 .discover-container {
     margin: 1vh;
     background-color: var(--color-secondary);
+    width: 100%;
 }
 
 .spotlight div {
@@ -362,24 +363,6 @@ section div {
 .spotlight div:nth-child(3) {
     display: none;
 }
-
-.spotlight {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.spotlight-card {
-    flex: 1 0 30%;
-    margin: 1vh;
-    background-color: var(--color-secondary);
-    border-radius: 15px;
-    padding: 20px;
-}
-
-.spotlight-card h2 {
-    margin-top: 0;
-}
-
 
 #join {
     display: none;

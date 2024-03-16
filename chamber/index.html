@@ -101,8 +101,13 @@
 
         <section id="weather">
 
-            <h2>Weather*</h2>
-            <p class="emoji">⛅</p>
+            <h2>Weather in Perez</h2>
+            <p><span id="current-temp"></span></p>
+
+            <figure>
+                <img src="" alt="" id="weather-icon" />
+                <figcaption></figcaption>
+            </figure>
 
             <p>Temperature: <input type="number" id="temperatureInput" value="60"></p>
             <p>Wind Speed: <input type="number" id="windSpeedInput" value="5"></p>
@@ -117,26 +122,9 @@
                 commodi laudantium nemo nihil iure reprehenderit..</p>
         </section>
 
-        <div class="spotlight">
-            <div class="spotlight-card">
-                <h2>Member Spotlight 1</h2>
-                <br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ad illum soluta quam error laudantium
-                    tempore atque quaerat modi obcaecati.</p>
-            </div>
-            <div class="spotlight-card">
-                <h2>Member Spotlight 2</h2>
-                <br>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non, aliquam iusto soluta deleniti autem
-                    eius vero voluptate earum ab repellat.</p>
-            </div>
-            <div class="spotlight-card">
-                <h2>Member Spotlight 3</h2>
-                <br>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo at rem recusandae quis ad, quaerat
-                    exercitationem rerum? Earum, neque nemo?</p>
-            </div>
-        </div>
+        <section class="spotlight">
+            <article></article>
+        </section>
 
         <section id="join">
             <h2>Join</h2>
@@ -178,12 +166,13 @@
         copyrightYear.textContent = `© ${new Date().getFullYear()} | Owen Morales | Costa Rica`;
     </script>
 
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/banner.js"></script>
     <script src="scripts/burger-menu.js"></script>
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/spotlight.js"></script>
     <script src="scripts/getdate.js"></script>
+    <script src="scripts/weather.js"></script>
 
 </body>
 

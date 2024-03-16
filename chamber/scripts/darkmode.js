@@ -1,5 +1,5 @@
 const darkModeToggle = document.getElementById('dark-mode-toggle');
-const sectionsToChange = document.querySelectorAll('main section, .discover-container, .spotlight-card');
+const sectionsToChange = document.querySelectorAll('main section, .discover-container, .spotlight');
 
 darkModeToggle.addEventListener('change', () => {
     if (darkModeToggle.checked) {
