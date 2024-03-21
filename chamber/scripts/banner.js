@@ -16,7 +16,7 @@ if (dayOfWeek >= 1 && dayOfWeek <= 3) {
     banner.style.color = '#f7f7f7';
     banner.style.width = '100%';
     banner.style.height = '40px';
-    banner.style.backgroundColor = '#c9c19f';
+    banner.style.backgroundColor = '#3e4b5b';
     banner.style.gridColumn = '1 / span 4';
     banner.style.gridRow = '1 / span 1';
     banner.style.textAlign = 'center';
