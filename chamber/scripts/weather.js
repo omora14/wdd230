@@ -1,11 +1,8 @@
-// Define your OpenWeatherMap API key
 const apiKey = '6b84ee617eea3abab2f30f89e09e2cfe';
 
-// Chamber location coordinates
-const chamberLatitude = -83.70; // Example latitude
-const chamberLongitude = 9.36; // Example longitude
+const chamberLatitude = -83.70;
+const chamberLongitude = 9.36;
 
-// Function to fetch three-day forecast data
 async function fetchThreeDayForecast() {
     const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${chamberLatitude}&lon=${chamberLongitude}&appid=${apiKey}&units=imperial`;
     try {
@@ -17,25 +14,21 @@ async function fetchThreeDayForecast() {
     }
 }
 
-// Function to get the next three days forecast
 async function getNextThreeDaysForecast() {
     const forecastData = await fetchThreeDayForecast();
     const forecastList = forecastData.list;
 
-    // Get today's day index (0 for Sunday, 1 for Monday, ..., 6 for Saturday)
     const today = new Date().getDay();
 
-    // Create an array to store the next three days forecast
     const nextThreeDaysForecast = [];
 
-    // Iterate through the forecast to find the next three days
     let nextDayIndex = today;
     for (let i = 0; i < 3; i++) {
         const forecast = forecastList.find(item => new Date(item.dt * 1000).getDay() === nextDayIndex);
         if (forecast) {
             nextThreeDaysForecast.push(forecast);
         }
-        nextDayIndex = (nextDayIndex + 1) % 7; // Increment day index and wrap around if needed
+        nextDayIndex = (nextDayIndex + 1) % 7;
     }
 
     return nextThreeDaysForecast;
@@ -45,7 +38,6 @@ async function getNextThreeDaysForecast() {
 async function displayForecast() {
     const forecastData = await getNextThreeDaysForecast();
 
-    // Display the forecast within current-temp element
     const currentTempElement = document.getElementById('current-temp');
     forecastData.forEach(forecast => {
         const date = new Date(forecast.dt * 1000);
@@ -69,5 +61,4 @@ async function displayForecast() {
     });
 }
 
-// Call the function to display the forecast data
 displayForecast();
