@@ -197,6 +197,7 @@ ul:hover {
 
 nav ul.open {
     display: block;
+    position: absolute;
 }
 
 .wind-chill {
@@ -225,6 +226,12 @@ hr {
     height: 3px;
     margin: 15px 0 30px;
     background: var(--color-accent4);
+}
+
+.dark-mode {
+    background-color: #000;
+    color: #fff;
+    border-color: #eee;
 }
 
 .getting-dark {
@@ -352,7 +359,6 @@ section div {
 .spotlight div,
 .discover-container {
     margin: 1vh;
-    background-color: var(--color-secondary);
     width: 100%;
 }
 
@@ -466,7 +472,6 @@ main#discover-main {
 }
 
 .discover-container {
-    background-color: var(--color-primary);
     max-height: none;
     padding: 1vh;
     margin-top: 2.5vh;
